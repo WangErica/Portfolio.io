@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+/** Nav Bar Begin**/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px solid #e7e7e7;
+}
+
+li a.left {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 22px 23px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: underline;
+}
+
+li a img{
+    width: 45px;
+    height: 45px;
+}
+/** Nav Bar End **/
