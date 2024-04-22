@@ -27,6 +27,7 @@ li a img{
     height: 45px;
 }
 /** Nav Bar End **/
+/**background-image: url("GalleryIMG/Scene/20170812_194651.webp") ;**/
 
 header {
     display: flex;
@@ -38,6 +39,7 @@ header {
     position: relative;
     align-items: center;
     margin: auto;
+    
 }
 
 .move {
@@ -87,7 +89,7 @@ header div h3 {
     width: 49.99999%;
 }
 
-/* Slideshow images*/
+
 .project-image {
     width: 500px;
     height: 300px;
@@ -99,11 +101,6 @@ header div h3 {
     position: relative;
     border-radius: 10%;
 }
-
-
-
-
-
 
 
 .project-info {
@@ -129,6 +126,7 @@ header div h3 {
 }
 
 .description {
+    width: 550px;
     font-family: 'ABeeZee', sans-serif;
     font-size: 1em;
     padding-bottom: 20px;
@@ -138,7 +136,7 @@ header div h3 {
 
 @media screen and (max-width: 4000px) {
     .project-col-6 {
-        width: 25%;
+        width: 24%;
         margin: 6px 0;
     }
 }

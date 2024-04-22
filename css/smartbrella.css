@@ -1,4 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Poppins Font Styles*/
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+  
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+ }
+  
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+  
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+  
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
 
 /** Nav Bar Begin**/
 ul {
@@ -27,3 +102,101 @@ li a img{
     height: 45px;
 }
 /** Nav Bar End **/
+
+/* Header/Logo Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    /*background: #7ebee0;*/
+    color: black;
+    font-size: 30px;
+}
+
+/* Text Size */
+.title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+}
+
+/* Layout */
+.container {
+    margin: 10px;
+    padding: 64px;
+    font-family: "Poppins", sans-serif;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+  
+.column {
+    float:left;
+    width: 31%;
+    padding: 5px;
+}
+
+.column1 {
+    float:left;
+    width: 49%;
+    padding: 5px;
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+  
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 10px;
+}
+  
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+}
+ 
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+  
+@media screen and (max-width: 4000px) {
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .column {
+       width: 100%;
+    }
+    .column1 {
+        width: 100%;
+     }
+}
