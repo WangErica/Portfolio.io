@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" content="width=device-width, initial-scale=1">
         <title>SmartBrella</title>
         <link rel="stylesheet" href="css/smartbrella.css">
         <link rel="icon" type="image/x-icon" href="images/glasses.png">
@@ -16,5 +16,199 @@
                 <li style="float:right"><a href="project.html">Project</a></li>
             </ul>
         </nav>
+        <div class="header">
+            <h1>SmartBrella</h1>
+            <p>Spring 2022<br>
+            Project Manager & Programmer
+            </p>
+        </div>
+
+        <!-- Intro Section -->
+        <div class="container">
+
+            <h1 class="title"><b>INTRODUCTION</b></h1>
+            <p><span style="font-size:20px">SmartBrella is an automated umbrella that opens and closes when a sound command is detected. 
+                It is also Bluetooth-connected to an app, allowing users to control the umbrella more conveniently. 
+                The SmartBrella was made possible with Computer-Aided Design (CAD), Python, and Arduino. 
+                This project was funded by the NYU Tandon EG1003 course.</span></p>
+
+            <center><div class="row">
+                <div class="column">
+                    <img src="images/SmartBrella/initial_brella1.png" width="335" height="471">
+                </div>
+                <div class="column">
+                    <img src="images/SmartBrella/initial_brella2.png" width="335" height="471">
+                </div>
+                <div class="column">
+                    <img src="images/SmartBrella/initial_brella3.png" width="335" height="471">
+                </div>
+            </div></center>
+        </div>
+        
+        <!-- Goal Section -->
+        <div class="container" style="background-color:#f1f1f1">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="title" style="font-size:40px"><b>OUR GOAL</b></h1>
+                    <h1 class="subtitle" style="color:red;"><b>Accessibility & Convenience</b></h1>
+                    <p style="font-size:20px"><b>Around 15% of people in the world have disabilities, 28% are blind or have vision impairment and 17 million are amputees. </b>
+                        This causes inconveniences when trying to perform simple actions. <br>
+                        The umbrella, an item everyone has at home, needs to be manually opened and closed, requiring a lot of strength to open and close. 
+                        Modifying the umbrella to automatically open and close will help a lot of people who have trouble performing these actions.
+                        We hope to create convenience and improve daily lives with an umbrella made of higher quality. 
+                        Not only does this umbrella offer greater protection against harsh weather compared to the common alternative, but it also creates a world better suited for people with disabilities. 
+                        By creating an app that controls the umbrella, we will make bigger strides toward building a more friendly environment for the disabled. 
+                        </p>
+                    <a href="images/SmartBrella/PDI.docx.pdf" target="_blank">
+                        <button class="button" style="background-color:red">Read more about our Preliminary Design</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Wireframe + Logo Images-->
+        <div class="container">
+            <div class="row">
+                <center><h1 class="title" style="font-size:40px"><b>WIREFRAME & LOGO</b></h1></center>
+                <center><div class="row">
+                    <div class="column">
+                        <img src="images/SmartBrella/initial_logo.png" width="335" height="471">
+                    </div>
+                    <div class="column">
+                        <img src="images/SmartBrella/logo_proto.png" width="335" height="471">
+                    </div>
+                    <div class="column">
+                        <img src="images/SmartBrella/flowchart_brella.png" width="335" height="471">
+                    </div>
+                </div></center>
+            </div>
+        </div>
+
+        <!--Wiring Images-->
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                    <center><h1 class="title" style="font-size:40px"><b>OUR PROCESS</b></h1></center>
+                    <p><span style="font-size:20px">To make the umbrella automatically open and close, a pulley was required. 
+                        The pulley consisted of two VEX motors, a LEGO gear, a metal axle, a long yarn string, and two shaft collars. 
+                        The axle is used to connect the two motors together, while also having the gear placed on the center of the axle with shaft collars on each side of the gear to keep it in place. 
+                        One end of the string is tied onto the gear and the other end is tied to the inside of the umbrella. <br>
+                        A KY-038 sound sensor, wires, an Arduino UNO board, a breadboard, and a DC motor driver controller board was used to make the umbrella open and close when the sound sensor detects a sound. 
+                        To let the motor move when a sound is detected, the motor would have wires connected to the controller board. 
+                        Other wires were then used to connect the controller board to the breadboard, which would connect to the Arduino UNO board and the sound sensor. <br>
+                        A Bluefruit Bluetooth module was also wired onto the breadboard to allow Bluetooth to send messages to the motors. 
+                        Duct tape was used to put all the previously listed materials together and attached to the umbrella.</span></p>
+                </div>
+                <center><div class="row">
+                    <div class="column">
+                        <img src="images/SmartBrella/wiring_1.webp" width="335" height="471">
+                    </div>
+                    <div class="column">
+                        <img src="images/SmartBrella/wiring_2.webp" width="335" height="471">
+                    </div>
+                    <div class="column">
+                        <img src="images/SmartBrella/wiring_3.webp" width="335" height="471">
+                    </div>
+                </div></center>
+            </div>
+
+            <div class="row">
+                <div class="column-66">
+                    <p><span style="font-size:20px">Arduino IDE was used to code the Arduino UNO unit used in the SmartBrella. 
+                        The libraries used for the Arduino code included the Adafruit BLE library and the standard Arduino library. 
+                        The script was programmed to recognize the sound of a clap through a microphone, signified by a LOW signal transmitted from the microphone’s input pin, and decide whether to stop the motor or begin turning it clockwise or counterclockwise. 
+                        The script kept track of the last direction turned. </span></p>
+                </div>
+                <div class="column1">
+                    <img src="images/SmartBrella/proto1.png" width="335" height="471">
+                </div>
+                <div class="column1">
+                    <img src="images/SmartBrella/proto2.png" width="335" height="471">
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenges Section -->
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="title" style="font-size:40px"><b>OUR CHALLENGES</b></h1>
+                    <center><div class="row">
+                        <div class="column">
+                            <img src="images/SmartBrella/compare1.png" width="335" height="471">
+                        </div>
+                        <div class="column">
+                            <img src="images/SmartBrella/compare2.png" width="335" height="471">
+                        </div>
+                        <div class="column">
+                            <img src="images/SmartBrella/compare3.png" width="335" height="471">
+                        </div>
+                    </div></center>
+                    <p style="font-size:20px">The VEX motors used had difficulties with the force needed to wind up the string and pull down the umbrella due to the strength of the springs holding the umbrella. 
+                        When the force required to pull down the string became larger than the motors could withstand, the motors would simply lock up and refuse to move further. 
+                        In order to get more force out of the motors, two motors were connected with one axle in between. <br>
+                        Difficulties were also experienced in the sound sensor, as the sensor was extremely sensitive to being touched and would react as if a loud sound was emitted near it when touched, however actual loud sounds such as claps nearby were not consistently recognized. 
+                        Attempting to increase the sensitivity of the sound sensor alleviated the issue somewhat. <br>
+                        In creating the handle, difficulties were encountered in trying to find a way to package the mechanical pieces and wires. 
+                        3D modeled or laser-cut containers were considered, but ultimately duct tape and cardboard were used to package the materials.
+                    </p>
+                </div>
+                <center><div class="row">
+                    <div class="column1">
+                        <video width="500" height="500" controls>
+                            <source src="images/SmartBrella/circuit_design.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="column1">
+                        <video width="500" height="500" controls>
+                            <source src="images/SmartBrella/wireworks.MOV" type="video/mp4">
+                        </video>
+                    </div>
+                </div></center>
+            </div>
+        </div>
+        
+        <!-- The App Section -->
+        <div class="container">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="title" style="font-size:40px"><b>THE APP</b></h1>
+                    <h1 class="subtitle" style="color:red;"><b>Ease of Access</b></h1>
+                    <div class="column-33">
+                        <img src="images/SmartBrella/app_proto1.png" width="1000" height="300" >
+                    </div>
+                    <p style="font-size:20px">The umbrella is paired with an application that allows the remote opening and closing of the umbrella, 
+                        as well as the ability to connect with weather APIs and remind the user to bring their umbrella if rain is predicted. 
+                        The app and the umbrella are connected through a Bluetooth chip, which allows opening and closing messages to be sent to the umbrella. </p>
+                    <a href="https://www.figma.com/proto/2PnL73tecnMFILxmvDuiGY/RAD?type=design&node-id=141-10&t=jbtQ4SWMAmZu8ZnJ-1&scaling=scale-down&page-id=119%3A16&starting-point-node-id=141%3A10&mode=design" target="_blank">
+                        <button class="button">View App Prototype</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Section -->
+        <div class="container" style="background-color:#f1f1f1">
+            <div class="row">
+                <div class="column-66">
+                    <h1 class="title" style="font-size:40px"><b>FINAL PRODUCT</b></h1>
+                    <h1 class="subtitle" style="color:red;"><b>Accessibility & Inclusivity</b></h1>
+                    <p style="font-size:20px">Through our team’s hard work and tenacity, we have successfully prototyped, designed, and built a multifunctional smart umbrella. 
+                        Our product aims to make umbrellas accessible for paraplegic individuals, amputees, or others with similar impairments like Parkinson's disease and blindness (accommodated by SmartBrella’s sound recognition capabilities). 
+                        The result of our innovation is an umbrella that can automatically open and close based on sound recognition and through a smartphone device with Bluetooth capabilities (the app component provides functionality for the user). 
+                        The app component is an important aspect of our smart umbrella, as it not only reminds the user to bring an umbrella when it is raining but also enables the user to open and close the umbrella with a push of a button.  
+                        </p>
+                    <a href="images/SmartBrella/Final Design Report.pdf" target="_blank">
+                        <button class="button" style="background-color:red">Final Design Report</button>
+                    </a>
+                </div>
+                <center><div class="row">
+                    <video width="500" height="400" controls>
+                        <source src="images/SmartBrella/final_product.mov" type="video/mp4">
+                    </video>
+                </div></center>
+            </div>
+        </div>
+  
     </body>
 </html>
